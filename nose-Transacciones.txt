@@ -1,0 +1,15 @@
+Usuario: nose
+Transacciones: 
+TipoTransaccion	|Monto Antes	|Monto Despues
+Deposito				|$0.00				|$50.00
+Deposito				|$50.00				|$100.00
+Deposito				|$100.00				|$150.00
+Deposito				|$150.00				|$200.00
+Deposito				|$200.00				|$250.00
+Deposito				|$250.00				|$300.00
+Deposito				|$300.00				|$350.00
+Deposito				|$350.00				|$400.00
+Deposito				|$400.00				|$450.00
+Deposito				|$450.00				|$500.00
+Deposito				|$500.00				|$650.00
+Monto actual: $650.00

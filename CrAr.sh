@@ -1,2 +1,2 @@
 #!/bin/bash
-rm carritos catalogo infoUsuario mutexEsp proveedores semHilos semHilosAc SHD usuarios && touch carritos catalogo infoUsuario mutexEsp proveedores semHilos semHilosAc SHD usuarios && gcc -o server server.c -lpthread && ./server
+rm transacciones infoUsuario mutexEsp semHilos semHilosAc SHD usuarios && touch transacciones infoUsuario mutexEsp semHilos semHilosAc SHD usuarios

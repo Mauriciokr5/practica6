@@ -84,7 +84,7 @@ struct infoUsuario retirar(struct infoUsuario dataUsu){
 int archivoTransacciones(struct infoUsuario dataUsu){
   struct Transacciones *transacciones = crearMemComTransacciones();
   FILE *fichero;
-  char nombreArchivo[10]="";
+  char nombreArchivo[119] = "";
   strcat(nombreArchivo, dataUsu.user);
   strcat(nombreArchivo, "-Transacciones.txt");
   fichero = fopen(nombreArchivo, "w+");
@@ -105,17 +105,9 @@ int archivoTransacciones(struct infoUsuario dataUsu){
   }
   fprintf(fichero, "Monto actual: $%0.2lf\n", dataUsu.monto);
 
-	/* Imprimimos la direccion para este ejemplo. */
-	printf("%p\n",fichero);
+
   fclose(fichero);
-  /*if(fichero == NULL) {
-		printf("El fichero no se ha podido abrir, no existe.");
-	} else {
-		printf("El fichero existe y esta en la direccion: %p\n",fichero);
-
-		fclose(fichero);
-	}*/
-
+  return 0;
 }
 
 int menuSesionIniciada(struct infoUsuario dataUsu){
